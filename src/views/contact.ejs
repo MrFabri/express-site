@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Metas-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Tittle-->
+    <title><%= tittle %></title>
+    <!--Favicon-->
+    <link rel="shortcut icon" href="imgs/mrfabriTransparentLogo_Black.png">
+    <!-- STYLES-->
+    <link rel="stylesheet" href="/css/deafult.css">
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <!--Animated CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+</head>
+
+<body id="body">
+    <% include partials/nav %>
+
+    <div style="margin-top: 80px; height: 100vh; display: flex; justify-content: center; align-items: center;">
+        <form id="form" action="/contact" method="POST">
+            <input type="text" name="name" placeholder="Name">
+            <input type="email" name="email" placeholder="Email">
+            <textarea name="message" placeholder="Message"></textarea>
+            <button type="submit" id="button">Send</button>
+        </form>
+    </div>
+
+    <script>
+        const form = document.getElementById('form');
+        form.addEventListener('submit', (e)=> {
+            e.preventDefault();
+        })
+    </script>
+
+    <% include partials/footer %>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Metas-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Tittle-->
+    <title><%= tittle %></title>
+    <!--Favicon-->
+    <link rel="shortcut icon" href="imgs/mrfabriTransparentLogo_Black.png">
+    <!-- Styles-->
+    <link rel="stylesheet" href="/css/deafult.css">
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <!--Animated CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+</head>
+
+<body id="body">
+    <% include partials/nav %>
+
+    <header>
+        <div class="headerContent">
+            <div class="infoContainer">
+                <h1>Proffesional Web Dev</h1>
+                <p>Welcome to my webpage, my name is Fabricio I'm a web developer and also a designer, I focus on
+                    writing
+                    clean and readable code and making the best designs
+                </p>
+            </div>
+
+            <div class="btnsContainer">
+                <div class="headerBtns headerBtn1"><a href="/">I need a website</a></div>
+                <div class="headerBtns headerBtn2"><a href="/contact">Contact us</a></div>
+            </div>
+        </div>
+    </header>
+
+    <div style="height: 500px"></div>
+
+    <% include partials/footer %>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
